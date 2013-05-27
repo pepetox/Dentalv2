@@ -23,3 +23,6 @@ body{
   background-repeat: no-repeat;
   filter: none;
 }
+#myCarousel {
+  width: 60%;
+}

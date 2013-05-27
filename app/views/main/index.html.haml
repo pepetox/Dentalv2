@@ -4,13 +4,24 @@
     %h1 Clinica dental Villanueva
     %article
       %h2 Clinica Villanueva
-      = image_tag("clinica.jpg", height: '32px', class: ".enbloque", id: "clinica" )
     %article
+      #myCarousel.carousel.slide
+        %ol.carousel-indicators
+          %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+          %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
+          %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+        / Carousel items
+        .carousel-inner
+          .active.item= image_tag("clinica.jpg", height: '32px', class: ".enbloque", id: "clinica" )
+          .item= image_tag("iglesia.jpg", height: '32px', class: ".enbloque", id: "clinica" )
+          .item= image_tag("villanueva.jpg", height: '32px', class: ".enbloque", id: "clinica" )
+        / Carousel nav
+        %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} &lsaquo;
+        %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} &rsaquo;
       %p lñ´sdg´ñldfs´ñlsl´ñslksldf sdflgksldñkg´sñdlfkg sdlñfg ksdf gs fdglñskdf lgskd´fl kgs´ldñfg s´ñdf´sñf g´ñld fgs kfg´ñlg´lgfgkñlsdfkgs´ñlfkgsñlfksñgkslñ
 
     %aside
-      %p no soy importante
-%footer.pie
+      %p no soy importante%footer.pie
   %ul.pie
     %li uno
     %li dos
