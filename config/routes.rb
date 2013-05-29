@@ -1,4 +1,13 @@
 Dental::Application.routes.draw do
+  resources :promos
+
+
+  resources :treatments
+
+
+  resources :workers
+
+
   resources :posts
 
 

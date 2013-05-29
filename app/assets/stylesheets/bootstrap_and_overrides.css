@@ -10,19 +10,23 @@
 body{
   width: 100%;
   margin: 0 200px 0 0;
-  background-color: #CCE2FD;
+  background-color: #E7F4FE;
   border: 0;
   padding: 0;
   font-family: 'Modern Antiqua', cursive;
-  color: #0088CC;
-
+  color: #0072A8;
 }
+
 .navbar-inner {
   background-color: #CCE2FD;
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
 }
+.navbar .nav > li > a {
+    color: #0072A8;
+
+}
 #myCarousel {
-  width: 60%;
+  width: 50%;
 }

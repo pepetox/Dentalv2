@@ -34,13 +34,16 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.brand{:href => "#"} Clinica Dental Villanueva
+            %span.icon-bar
+
+          %a.brand{:href => root_url} Clinica Dental Villanueva
           .container-fluid.nav-collapse
-            %ul.nav
-              %li= link_to "Donde estamos", "#"
-              %li= link_to "Nuestros profesionales", "#"
+            %ul.nav.pull-right
+              %li= link_to "Nuestros profesionales", workers_path
               %li= link_to "Nuestra Clinica", "#"
-              %li= link_to "Tratamientos destacados", "#"
+              %li= link_to "Tratamientos destacados", treatments_path
+              %li= link_to "Noticias y ofertas", promos_path
+
           / /.nav-collapse
     .container-fluid
       .row-fluid
