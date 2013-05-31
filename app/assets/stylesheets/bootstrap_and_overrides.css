@@ -13,7 +13,8 @@ body{
   background-color: #E7F4FE;
   border: 0;
   padding: 0;
-  font-family: 'Modern Antiqua', cursive;
+  font-family: 'Noto Serif', serif;
+
   color: #0072A8;
 }
 
@@ -27,6 +28,11 @@ body{
     color: #0072A8;
 
 }
+img#logo{
+  height: 100px;
+  width: auto;
+}
+
 #myCarousel {
   width: 50%;
 }
