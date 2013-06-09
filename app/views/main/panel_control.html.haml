@@ -1,0 +1,61 @@
+%header
+  %section.cuerpo
+    %h1 Panel de control
+    %article
+      %h2 Bienvenido al panel de control
+      %p Desde aquí podrá editar el contenido de la web, pulse en los distintos aparatados para desplegarlos y ver las opciones
+    %article
+      .seccion
+        %h3
+          %a Promociones
+        .listado#apartado
+          %ul
+            - @promos.each do |promo|
+              .bloque
+                %li
+                  %a
+                    %strong=promo.name
+                .contenido
+                  = promo.description.html_safe
+                  %p= button_to 'Editar', edit_promo_path(promo), method: "get", class: "btn btn-primary"
+          %p= button_to 'Nuevo Jugador', new_promo_path(), method: "get", class: "btn btn-primary"
+      .seccion
+        %h3
+          %a Tratamientos
+        .listado#apartado
+          %ul
+            - @treatments.each do |treatment|
+              .bloque
+                %li
+                  %a
+                    %strong= treatment.name
+                .contenido
+                  = treatment.description.html_safe
+                  %p= button_to 'Editar', edit_treatment_path(treatment), method: "get", class: "btn btn-primary"
+          %p= button_to 'Nuevo Jugador', new_treatment_path(), method: "get", class: "btn btn-primary"
+      .seccion
+        %h3
+          %a Trabajadores
+        .listado#apartado
+          %ul
+            - @workers.each do |worker|
+              .bloque
+                %li
+                  %a
+                    %strong= worker.name
+                .contenido
+                  = worker.description.html_safe
+                  %p= button_to 'Editar', edit_worker_path(worker), method: "get", class: "btn btn-primary"
+          %p= button_to 'Nuevo Jugador', new_worker_path(), method: "get", class: "btn btn-primary"
+      .seccion
+        %h3
+          %a Textos varios de la web
+        .listado#apartado
+          %ul
+            - @textos.each do |texto|
+              .bloque
+                %li
+                  %a
+                    %strong= texto.name
+                .contenido
+                  = texto.content.html_safe

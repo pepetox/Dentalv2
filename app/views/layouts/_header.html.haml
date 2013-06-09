@@ -6,11 +6,13 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.brand{:href => root_url}Clínica dental Gómez-Valor
+      %a.brand{:href => root_url}
+        = image_tag "logoclinica.png", :size => "100x100", class: "img-rounded", id: "foto_derecha"
       .container-fluid.nav-collapse
-        %ul.nav.pull-right
+        %ul.nav.barra
           %li= link_to "Nuestros profesionales", workers_path
           %li= link_to "Nuestra Clinica", "#"
           %li= link_to "Tratamientos", treatments_path
           %li= link_to "Noticias y ofertas", promos_path
+          %li= link_to "Panel de control", admin_path
       / /.nav-collapse

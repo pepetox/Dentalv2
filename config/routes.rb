@@ -12,6 +12,7 @@ Dental::Application.routes.draw do
 
 
   get "main/index"
+  match "/admin" => "main#panel_control"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

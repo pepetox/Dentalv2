@@ -15,6 +15,14 @@ body{
   padding: 0;
     color: #0072A8;
 }
+  .barra {
+    font-size: 150%;
+    line-height: 0;
+    vertical-align: baseline;
+    position: relative;
+    top: 2.2em;
+
+  }
 
 .navbar-inner {
   background-color: #CCE2FD;
@@ -26,6 +34,12 @@ body{
     color: #0072A8;
 
 }
+.contenido {
+    display: none;
+  }
+.listado{
+    display: none;
+  }
 img#logo{
   height: 100px;
   width: auto;
@@ -33,4 +47,9 @@ img#logo{
 
 #myCarousel {
   width: 50%;
+}
+#apartado{
+
+      padding: 2% 1% 2% 4%;
+
 }

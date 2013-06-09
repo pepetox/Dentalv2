@@ -24,6 +24,7 @@ gem 'jquery-rails'
 gem 'devise'
 gem "haml"
 gem "twitter-bootstrap-rails"
+gem "ckeditor"
 
 
 

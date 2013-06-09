@@ -10,8 +10,18 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
+//= require ckeditor/init
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
 
 
+$(document).ready(function() {
+  $('.bloque').on('click', 'a', function() {
+    $(this).closest('.bloque').find('.contenido').slideToggle();
+  });
+  $('.seccion').on('click', 'h3', function() {
+
+    $(this).closest('.seccion').find('.listado').slideToggle();
+  });
+});
